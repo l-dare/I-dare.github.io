@@ -1,0 +1,8 @@
+<div id="about"></div>
+<script>
+  fetch('components/about.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('about').innerHTML = data;
+    });
+</script>
