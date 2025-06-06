@@ -7,15 +7,43 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Luke Clare</a>
+      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
+        ☰ Menu
+      </button>
+      <span class="navbar-brand mb-0 h1">Luke Clare</span>
     </div>
   </nav>
+
+  <!-- Sidebar Menu (Offcanvas) -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Navigation</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">🏠 Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">📬 Contact</a>
+        </li>
+        <!-- Add more links here -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Page Content -->
   <div class="container mt-5">
     <h1>Welcome to My Modular Site</h1>
     <p>This is a Bootstrap-powered website hosted on GitHub Pages.</p>
   </div>
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
